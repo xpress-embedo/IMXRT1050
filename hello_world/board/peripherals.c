@@ -10,7 +10,7 @@ product: Peripherals v15.0
 processor: MIMXRT1052xxxxB
 package_id: MIMXRT1052DVL6B
 mcu_data: ksdk2_0
-processor_version: 24.12.10
+processor_version: 25.06.10
 board: IMXRT1050-EVKB
 functionalGroups:
 - name: BOARD_InitPeripherals

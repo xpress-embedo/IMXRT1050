@@ -10,7 +10,7 @@ product: Pins v17.0
 processor: MIMXRT1052xxxxB
 package_id: MIMXRT1052DVL6B
 mcu_data: ksdk2_0
-processor_version: 24.12.10
+processor_version: 25.06.10
 board: IMXRT1050-EVKB
 pin_labels:
 - {pin_num: E3, pin_signal: GPIO_EMC_00, label: SEMC_D0, identifier: SEMC_D0}

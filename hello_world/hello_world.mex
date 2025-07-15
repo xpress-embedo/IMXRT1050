@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding= "UTF-8" ?>
-<configuration name="MIMXRT1052xxxxB" xsi:schemaLocation="http://mcuxpresso.nxp.com/XSD/mex_configuration_18 http://mcuxpresso.nxp.com/XSD/mex_configuration_18.xsd" uuid="2b913a60-37ec-4cf5-98ed-82e9299b7622" version="18" xmlns="http://mcuxpresso.nxp.com/XSD/mex_configuration_18" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<configuration name="MIMXRT1052xxxxB" xsi:schemaLocation="http://mcuxpresso.nxp.com/XSD/mex_configuration_18 http://mcuxpresso.nxp.com/XSD/mex_configuration_18.xsd" uuid="b2fd2945-e123-4b5f-934b-bf298b4650e7" version="18" xmlns="http://mcuxpresso.nxp.com/XSD/mex_configuration_18" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
    <common>
       <processor>MIMXRT1052xxxxB</processor>
       <package>MIMXRT1052DVL6B</package>
@@ -1179,7 +1179,7 @@
                <options/>
                <dependencies/>
                <instances>
-                  <instance name="NVIC" uuid="47cdf405-e5ae-4698-8034-cbfbba6eebe9" type="nvic" type_id="nvic" mode="general" peripheral="NVIC" enabled="true" comment="" custom_name_enabled="false" editing_lock="false">
+                  <instance name="NVIC" uuid="145c30bb-9e57-4b9a-9f4a-c577e101dfe9" type="nvic" type_id="nvic" mode="general" peripheral="NVIC" enabled="true" comment="" custom_name_enabled="false" editing_lock="false">
                      <config_set name="nvic">
                         <array name="interrupt_table"/>
                         <array name="interrupts"/>
@@ -1189,34 +1189,34 @@
             </functional_group>
          </functional_groups>
          <components>
-            <component name="system" uuid="2bf43416-9945-4236-86b2-084672b5ada4" type_id="system">
+            <component name="system" uuid="14b559de-7903-412a-ab38-d865db8ff3d9" type_id="system">
                <config_set_global name="global_system_definitions">
                   <setting name="user_definitions" value=""/>
                   <setting name="user_includes" value=""/>
                   <setting name="global_init" value=""/>
                </config_set_global>
             </component>
-            <component name="uart_cmsis_common" uuid="799e6fe3-9f7f-48ae-848d-c7cd2685082e" type_id="uart_cmsis_common">
+            <component name="uart_cmsis_common" uuid="2abf69f1-1b52-4501-a492-2b463da7099e" type_id="uart_cmsis_common">
                <config_set_global name="global_USART_CMSIS_common" quick_selection="default"/>
             </component>
-            <component name="msg" uuid="9d0b72d5-4294-4aa5-93b8-b6914c678664" type_id="msg">
+            <component name="msg" uuid="854ca3a1-959b-4203-bd3c-c7b5d046533e" type_id="msg">
                <config_set_global name="global_messages"/>
             </component>
-            <component name="gpio_adapter_common" uuid="c469842d-4b2c-4ec8-8641-8bca11589d52" type_id="gpio_adapter_common">
+            <component name="gpio_adapter_common" uuid="cafd60e5-65a9-419d-a28e-0cbffe264a7a" type_id="gpio_adapter_common">
                <config_set_global name="global_gpio_adapter_common" quick_selection="default"/>
             </component>
-            <component name="generic_uart" uuid="7eae435e-f15a-465e-9269-83f73280e2e3" type_id="generic_uart">
+            <component name="generic_uart" uuid="d6f3f6c3-0833-4d5d-9f7b-c93fcda68870" type_id="generic_uart">
                <config_set_global name="global_uart"/>
             </component>
-            <component name="generic_enet" uuid="1fffc157-5f3d-4629-8a7e-b6735d341b2c" type_id="generic_enet">
+            <component name="generic_enet" uuid="a1b3a8f0-1672-41f5-8ea2-4b0491ecfa31" type_id="generic_enet">
                <config_set_global name="global_enet"/>
             </component>
-            <component name="generic_can" uuid="c5bde09f-364e-4a32-8b51-6cdc48304843" type_id="generic_can">
+            <component name="generic_can" uuid="9d01d2d1-3bb5-49b2-b344-c281c1ba5bf1" type_id="generic_can">
                <config_set_global name="global_can"/>
             </component>
          </components>
       </periphs>
-      <tee name="TEE" version="8.0" enabled="false" update_project_code="true">
+      <tee name="TEE" version="9.0" enabled="false" update_project_code="true">
          <generated_project_files/>
          <tee_profile>
             <processor_version>N/A</processor_version>

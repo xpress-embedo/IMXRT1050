@@ -18,6 +18,7 @@
 /* TODO: insert other include files here. */
 #include "main.h"
 #include "fsl_gpio.h"
+#include "fsl_iomuxc.h"
 /* TODO: insert other definitions and declarations here. */
 
 /*------------------------- Private Function Prototypes ----------------------*/
@@ -43,7 +44,7 @@ int main(void)
 
   while(1)
   {
-    // SDK_DelayAtLeastUs(100000, SDK_DEVICE_MAXIMUM_CPU_CLOCK_FREQUENCY);
+    SDK_DelayAtLeastUs(100000, SDK_DEVICE_MAXIMUM_CPU_CLOCK_FREQUENCY);
     Led_Mng();
   }
 
@@ -61,6 +62,7 @@ static void Led_Init( void )
   };
 
   GPIO_PinInit(USER_LED_GPIO, USER_LED_GPIO_PIN, &led_config);
+  IOMUXC_SetPinMux(IOMUXC_GPIO_AD_B0_09_GPIO1_IO09, 0U);
 }
 
 static void Led_Mng( void )

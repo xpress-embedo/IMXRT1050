@@ -12,8 +12,8 @@
 
 /*------------------------------- Global Macros ------------------------------*/
 // Hardware Specific Macros
-#define USER_LED_GPIO                       (BOARD_USER_LED_GPIO)
-#define USER_LED_GPIO_PIN                   (BOARD_USER_LED_GPIO_PIN)
+#define USER_LED_GPIO                       (BOARD_INITPINS_USER_LED_GPIO)
+#define USER_LED_GPIO_PIN                   (BOARD_INITPINS_USER_LED_GPIO_PIN)
 
 
 /*-------------------------- Public Function Prototypes ----------------------*/

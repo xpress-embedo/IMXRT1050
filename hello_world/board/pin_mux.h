@@ -37,6 +37,21 @@ extern "C" {
  */
 void BOARD_InitBootPins(void);
 
+/* GPIO_AD_B0_09 (coord F14), JTAG_TDI/J21[5]/ENET_RST/J22[5] */
+/* Routed pin properties */
+#define BOARD_INITPINS_USER_LED_PERIPHERAL                                 GPIO1   /*!< Peripheral name */
+#define BOARD_INITPINS_USER_LED_SIGNAL                                   gpio_io   /*!< Signal name */
+#define BOARD_INITPINS_USER_LED_CHANNEL                                       9U   /*!< Signal channel */
+
+/* Symbols to be used with GPIO driver */
+#define BOARD_INITPINS_USER_LED_GPIO                                       GPIO1   /*!< GPIO peripheral base pointer */
+#define BOARD_INITPINS_USER_LED_INIT_GPIO_VALUE                               0U   /*!< GPIO output initial state */
+#define BOARD_INITPINS_USER_LED_GPIO_PIN                                      9U   /*!< GPIO pin number */
+#define BOARD_INITPINS_USER_LED_GPIO_PIN_MASK                         (1U << 9U)   /*!< GPIO pin mask */
+#define BOARD_INITPINS_USER_LED_PORT                                       GPIO1   /*!< PORT peripheral base pointer */
+#define BOARD_INITPINS_USER_LED_PIN                                           9U   /*!< PORT pin number */
+#define BOARD_INITPINS_USER_LED_PIN_MASK                              (1U << 9U)   /*!< PORT pin mask */
+
 
 /*!
  * @brief Configures pin routing and optionally pin electrical features.

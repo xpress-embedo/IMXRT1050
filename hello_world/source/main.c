@@ -6,7 +6,7 @@
  */
 
 /**
- * @file    hello_world.c
+ * @file    main.c
  * @brief   Application entry point.
  */
 #include <stdio.h>
@@ -54,6 +54,8 @@ int main(void)
 /*------------------------ Private Function Definitions ----------------------*/
 static void Led_Init( void )
 {
+  CLOCK_EnableClock(kCLOCK_Iomuxc);
+
   gpio_pin_config_t led_config =
   {
       kGPIO_DigitalOutput,
